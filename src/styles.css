@@ -1,8 +1,15 @@
+:root {
+    --bg-dark: #181C14;
+    --bg-med: #3C3D37;
+    --bg-light: #697565;
+    --bg-detail: #ECDFCC;
+}
+
 body {
     margin:0;
 }
 html {
-    background: #181C14;
+    background: var(--bg-dark);
 }
 
 #container {
@@ -14,11 +21,14 @@ html {
 }
 
 .window {
+    width: 350px;
+    height: 450px;
+
+    background: var(--bg-med);
+    border: 2px dashed var(--bg-light);
 }
 
 /* Custom Elements Styles */
 
 .about {
-    width: 350px;
-    height: 450px;
 }
