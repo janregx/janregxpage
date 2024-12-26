@@ -7,6 +7,7 @@
 
 body {
     margin:0;
+    display:flex; 
 }
 html {
     background: var(--bg-dark);
@@ -14,18 +15,32 @@ html {
 
 #container {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    
+    overflow-y: auto;
 
-    justify-content:center;
-    align-items:center;
+    width: 60vw;
+    height: 100vh;
 }
 
-.panel {
-    width: 350px;
-    height: 450px;
+#menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 40vw;
+    height:100vh;
+}
 
+.post1,.post2,.post3 {
     background: var(--bg-med);
     border: 2px dashed var(--bg-light);
+    
+    margin: 32px;
+    padding: 16px;
+
+    width: 80%;
 }
 
 /* Custom Elements Styles */
